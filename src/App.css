@@ -25,7 +25,14 @@
   color: white;
 }
 
-.App-footer{
+.navbar-logo:hover{
+  transform: scale(1.2);
+}
+
+.profile-pic{
+  border-radius: 50%;
+  height: 80%;
+  width: 80%;
 
 }
 
