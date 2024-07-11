@@ -1,9 +1,14 @@
 export function AboutMe(){
+    function handleResumeClick(){
+        const resumeUrl = '/Portfolio/static/Keren_Reshef_CV.pdf';
+        window.open(resumeUrl, '_blank')
+    }
+
     return(
         <div id="about-me" className="container col-xxl-8 px-4 py-5">
             <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div className="col-10 col-sm-8 col-lg-6">
-                    <img src={require("../images/keren.jpeg")} className="d-block mx-lg-auto img-fluid profile-pic" alt="Keren Reshef"
+                    <img src={"/static/keren.jpeg"} className="d-block mx-lg-auto img-fluid profile-pic" alt="Keren Reshef"
                          loading="lazy"/>
                 </div>
                 <div className="col-lg-6">
@@ -12,7 +17,7 @@ export function AboutMe(){
                         world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
                         responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" className="btn btn-outline-secondary btn-lg px-4">Resume</button>
+                        <button type="button" className="btn btn-outline-secondary btn-lg px-4" onClick={handleResumeClick}>Resume</button>
                     </div>
                 </div>
             </div>
