@@ -4,7 +4,7 @@ import {headerData} from "./data/HeaderData";
 export function Header(){
     return(
         <header>
-            <div className="px-3 py-2 border-bottom App-header">
+            <div className="px-3 py-2 border-bottom App-header fixed-top">
                 <div className="container">
                     <div
                         className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
