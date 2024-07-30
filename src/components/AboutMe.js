@@ -1,7 +1,7 @@
 export function AboutMe(){
     function handleResumeClick(){
-        const resumeUrl = '/Portfolio/static/Keren_Reshef_CV.pdf';
-        window.open(resumeUrl, '_blank')
+        const resumePath = require("../media/Keren_Reshef_CV.pdf");
+        window.open(resumePath, '_blank')
     }
 
     return(
